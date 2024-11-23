@@ -1,0 +1,8 @@
+
+#ignore files with no extension (ignore executable files of cpp)
+*~
+
+
+
+#ignore folders
+.vscode/
