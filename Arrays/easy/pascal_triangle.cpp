@@ -19,7 +19,7 @@ public:
 int main()
 {
     Solution sol = Solution();
-    vector<int> v = sol.getRow(33); // Get the 4th row (0-indexed)
+    vector<int> v = sol.getRow(4);
     for (int i = 0; i < v.size(); i++) {
         cout << v[i] << " ";
     }
