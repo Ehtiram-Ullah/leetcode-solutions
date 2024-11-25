@@ -18,7 +18,7 @@ public:
 };
 int main()
 {
-    Solution sol = Solution();
+    Solutioon sol = Solution();
     vector<int> v = sol.getRow(4);
     for (int i = 0; i < v.size(); i++) {
         cout << v[i] << " ";
