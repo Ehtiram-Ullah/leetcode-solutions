@@ -29,15 +29,15 @@ Problem:
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        set<int> mySet;
-        for(int i=0;i<nums.size();++i){
-            auto result = mySet.insert(nums[i]);
-            if(!result.second){
-                mySet.erase(result.first);
-
-            }
+        int n = nums.size();
+        if(n==1){
+            return nums[0];
         }
-        return *mySet.begin();
+        int ans=0;
+        for(int i=0;i<n;++i){
+            ans ^= nums[i]; // ^ means XOR
+        }
+        return ans;
     }
 };
 
